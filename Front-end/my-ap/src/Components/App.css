@@ -55,6 +55,7 @@ body {
        background-image: url("../images/bg-logo.png"); /* Change this to your image */
        background-size: contain; /* Ensure the image covers the entire element */
        background-position: right center; /* Center the image */
+       background-repeat: no-repeat; /* Prevent repeating */
        animation: kenburns-top 10s ease-in-out infinite; /* Apply the Ken Burns animation */
        margin: 50px 100px 100px auto; ;
         stroke-opacity: 50%;
@@ -63,6 +64,14 @@ body {
        justify-content: right; /* Horizontal alignment */
        color: white; /* Text color */
      }
+
+     .popframe{
+      text-decoration: none;
+    }
+    
+    .popframe:link, .popframe:visited, .popframe:hover, .popframe:active{
+      color: #ADFF2F;
+    }
      
      .ask-section {
        margin-top: 20px; /* Space above the ask section */
