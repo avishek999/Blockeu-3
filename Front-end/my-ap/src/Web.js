@@ -91,7 +91,7 @@ const Web = () => {
         {/* Second Card: Pudgy Penguins */}
         <div style={cardStyle}>
         <img src={require('./images/pudgy.png')} alt="Pudgy Penguins" style={imgStyle} />
-        <h5 style={headingStyle}>PudgyPenguins</h5>
+        <h5 style={headingStyle}> PudgyPenguins</h5>
        < p style={paragraphStyle}>The PudgyPenguins contract is an ERC721 token contract that allows users to mint penguin NFT's.
             The contract supports pausing and resuming the sale, and allows the owner to withdraw funds.</p>
         </div>
@@ -107,37 +107,45 @@ const Web = () => {
     </div>
 
     <div className="container popular-frameworks-section">
-    <h2 style={{ textAlign: 'center', marginRight: '20px' }}>Popular Ethereum Frameworks</h2>
-    <div className="row justify-content-center">
-        <div className="col-md-3">
-            <div className="framework-card">
-            <img src={require('./images/metamask.png')} alt="Metamask" />
-                <h5>MetaMask</h5>
-                <p>A crypto wallet and gateway to blockchain apps.</p>
-            </div>
+  <h2 style={{ textAlign: 'center', marginRight: '20px' }}>Popular Ethereum Frameworks</h2>
+  <div className="row justify-content-center">
+    <div className="col-md-3">
+      <a href="https://metamask.io/" class="popframe" target="_blank" rel="noopener noreferrer">
+        <div className="framework-card">
+          <img src={require('./images/metamask.png')} alt="MetaMask" />
+          <h5>MetaMask</h5>
+          <p>A crypto wallet and gateway to blockchain apps.</p>
         </div>
-        <div className="col-md-3">
-            <div className="framework-card">
-            <img src={require('./images/alchemy.png')} alt="Alchemy" />
-                <h5>Alchemy</h5>
-                <p>The platform for blockchain developers to build apps.</p>
-            </div>
-        </div>
-        <div className="col-md-3">
-            <div className="framework-card">
-            <img src={require('./images/infura.png')} alt="Infura" />
-                <h5>Infura</h5>
-                <p>A suite of tools for building on Ethereum.</p>
-            </div>
-        </div>
-        <div className="col-md-3">
-            <div className="framework-card">
-            <img src={require('./images/hardhat.png')} alt="Hardhat" />
-                <h5>Hardhat</h5>
-                <p>A development environment for Ethereum.</p>
-            </div>
-        </div>
+      </a>
     </div>
+    <div className="col-md-3">
+      <a href="https://www.alchemy.com/" class="popframe" target="_blank" rel="noopener noreferrer">
+        <div className="framework-card">
+          <img src={require('./images/alchemy.png')} alt="Alchemy" />
+          <h5>Alchemy</h5>
+          <p>The platform for blockchain developers to build apps.</p>
+        </div>
+      </a>
+    </div>
+    <div className="col-md-3">
+      <a href="https://infura.io/" class="popframe" target="_blank" rel="noopener noreferrer">
+        <div className="framework-card">
+          <img src={require('./images/polygon.png')} alt="Polygon" />
+          <h5>Infura</h5>
+          <p>A suite of tools for building on Ethereum.</p>
+        </div>
+      </a>
+    </div>
+    <div className="col-md-3">
+      <a href="https://hardhat.org/" class="popframe" target="_blank" rel="noopener noreferrer">
+        <div className="framework-card">
+          <img src={require('./images/hardhat.png')} alt="Hardhat" />
+          <h5>Hardhat</h5>
+          <p>A development environment for Ethereum.</p>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
 
 <div>

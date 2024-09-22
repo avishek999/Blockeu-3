@@ -69,7 +69,9 @@ const Home = () => {
           {/* First Card: Basic DAO */}
           <div style={cardStyle}>
             <img src={require('../images/basicdao.png')} alt="Basic DAO" style={imgStyle} />
-            <h5 style={headingStyle}>Basic DAO</h5>
+            <h5 style={headingStyle}>
+            <a href="https://www.cookbook.dev/contracts/basic-dao" class="popframe" target="_blank" rel="noopener noreferrer"> Basic DAO </a>
+              </h5>
             <p style={paragraphStyle}>A very simple and easy implementation of a DAO. Voting period is locked in at 1 week, 
                and the voting delay is 1 block. There is no delay on approved proposals.</p>
           </div>
@@ -77,7 +79,9 @@ const Home = () => {
           {/* Second Card: Pudgy Penguins */}
           <div style={cardStyle}>
             <img src={require('../images/pudgy.png')} alt="Pudgy Penguins" style={imgStyle} />
-            <h5 style={headingStyle}>Pudgy Penguins</h5>
+            <h5 style={headingStyle}>
+            <a href="https://www.cookbook.dev/contracts/PudgyPenguins" class="popframe" target="_blank" rel="noopener noreferrer"> Pudgy Penguins </a>
+            </h5>
             <p style={paragraphStyle}>The Pudgy Penguins contract is an ERC721 token contract that allows users to mint penguin NFTs.
                The contract supports pausing and resuming the sale, and allows the owner to withdraw funds.</p>
           </div>
@@ -85,46 +89,57 @@ const Home = () => {
           {/* Third Card: Vesting Wallet */}
           <div style={cardStyle}>
             <img src={require('../images/vesting.png')} alt="Vesting Wallet" style={imgStyle} />
-            <h5 style={headingStyle}>Vesting Wallet</h5>
+            <h5 style={headingStyle}> 
+            <a href="https://www.cookbook.dev/contracts/OpenZeppelin-VestingWallet" class="popframe" target="_blank" rel="noopener noreferrer"> Vesting Wallet </a>
+            </h5> 
             <p style={paragraphStyle}>This contract is a vesting wallet that allows for the gradual release of native tokens
                (ether) and ERC20 tokens to a beneficiary over a specified duration.</p>
           </div>
         </div>
       </div>
 
-      <div className="container popular-frameworks-section">
-        <h2 style={{ textAlign: 'center', marginRight: '20px' }}>Popular Ethereum Frameworks</h2>
-        <div className="row justify-content-center">
-          <div className="col-md-3">
-            <div className="framework-card">
-              <img src={require('../images/metamask.png')} alt="Metamask" />
-              <h5>MetaMask</h5>
-              <p>A crypto wallet and gateway to blockchain apps.</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="framework-card">
-              <img src={require('../images/alchemy.png')} alt="Alchemy" />
-              <h5>Alchemy</h5>
-              <p>The platform for blockchain developers to build apps.</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="framework-card">
-              <img src={require('../images/infura.png')} alt="Infura" />
-              <h5>Infura</h5>
-              <p>A suite of tools for building on Ethereum.</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="framework-card">
-              <img src={require('../images/hardhat.png')} alt="Hardhat" />
-              <h5>Hardhat</h5>
-              <p>A development environment for Ethereum.</p>
-            </div>
-          </div>
+<div className="container popular-frameworks-section">
+  <h2 style={{ textAlign: 'center', marginRight: '20px' }}>Popular Ethereum Frameworks</h2>
+  <div className="row justify-content-center">
+    <div className="col-md-3">
+        <div className="framework-card">
+          <img src={require('../images/metamask.png')} alt="MetaMask" />
+          <h5>
+            <a href="https://metamask.io/" class="popframe" target="_blank" rel="noopener noreferrer">MetaMask</a>
+          </h5>
+          <p>A crypto wallet and gateway to blockchain apps.</p>
         </div>
-      </div>
+    </div>
+    <div className="col-md-3">
+
+        <div className="framework-card">
+          <img src={require('../images/alchemy.png')} alt="Alchemy" />
+          <h5>
+            <a href="https://www.alchemy.com/" class="popframe" target="_blank" rel="noopener noreferrer">Alchemy</a>
+          </h5>
+          <p>The platform for blockchain developers to build apps.</p>
+        </div>
+    </div>
+    <div className="col-md-3">
+        <div className="framework-card">
+          <img src={require('../images/polygon.png')} alt="Polygon" />
+          <h5>
+            <a href="https://infura.io/" class="popframe" target="_blank" rel="noopener noreferrer"> Infura </a>
+          </h5>
+          <p>A suite of tools for building on Ethereum.</p>
+        </div>
+    </div>
+    <div className="col-md-3">
+        <div className="framework-card">
+          <img src={require('../images/hardhat.png')} alt="Hardhat" />
+          <h5>
+            <a href="https://hardhat.org/" class="popframe" target="_blank" rel="noopener noreferrer"> Hardhat </a>
+          </h5>
+          <p>A development environment for Ethereum.</p>
+        </div>
+    </div>
+  </div>
+</div>
 
       <div>
         {/* Other sections */}

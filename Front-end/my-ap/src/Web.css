@@ -71,6 +71,13 @@ body {
     justify-content: flex-end; /* Align to the right */
 }
 
+.popframe{
+  text-decoration: none;
+}
+
+.popframe link, .popframe visited, .popframe hover, .popframe active{
+  color: #ADFF2F;
+}
 
 .ask-button {
     background-color: black;
